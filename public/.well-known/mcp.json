@@ -1,0 +1,21 @@
+{
+  "services": [
+    {
+      "name": "FlightStatus",
+      "methods": [
+        {
+          "name": "get_flight_status",
+          "description": "Returns real-time status of a flight given airline and number.",
+          "request": {
+            "airline": "string",
+            "flight_number": "string"
+          },
+          "response": {
+            "status": "string",
+            "departure_time": "datetime"
+          }
+        }
+      ]
+    }
+  ]
+}
